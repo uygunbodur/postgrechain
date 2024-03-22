@@ -1,3 +1,25 @@
+# Custom Solana Program Accounts PostgreSQL Extension: postgreChain
+
+postgreChain is designed to integrate seamlessly with Solana blockchain data, enabling users to query program accounts directly from a PostgreSQL database. It leverages the power of Rust and the pgx framework to provide a high-performance, reliable, and easy-to-use solution for developers and analysts working with Solana blockchain data.
+
+## Features
+
+- Direct Blockchain Access: Fetch program account details directly from the Solana blockchain into your PostgreSQL database.
+- High Performance: Written in Rust and optimized for efficiency, this extension offers fast query execution and minimal latency.
+- Easy Integration: Seamlessly integrates with existing PostgreSQL databases, allowing for the addition of blockchain data to your relational datasets.
+- Flexible Querying: Supports a range of queries, from simple account lookups to complex analytical queries, to meet diverse data analysis needs.
+- Secure: Implements best practices to ensure secure data access and transactions.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+If you encounter any issues or have questions about using the extension, please open an issue on the GitHub repository.
+
+---
+
 # Installing a Custom PostgreSQL Extension with Docker for PostgreSQL 13
 
 This guide provides a step-by-step walkthrough for installing a custom PostgreSQL extension, compiled into a `.so` (shared object) file using Rust and the `pgx` library, into a PostgreSQL 13 database running inside a Docker container.
@@ -5,20 +27,20 @@ This guide provides a step-by-step walkthrough for installing a custom PostgreSQ
 ## Prerequisites
 
 - Docker installed on your machine.
-- Rust and the `pgx` framework installed for developing PostgreSQL extensions.
-- A PostgreSQL extension project developed with `pgx`.
+- Rust and the `pgrx` framework installed for developing PostgreSQL extensions.
+- A PostgreSQL extension project developed with `pgrx`.
 - PostgreSQL client tools installed locally (optional, for testing purposes).
 
 ## Step 1: Compile Your Extension
 
-Before building your Docker image, you need to compile your extension using `pgx`. This will produce the `.so`, `.sql`, and `.control` files needed to install your extension in PostgreSQL.
+Before building your Docker image, you need to compile your extension using `pgrx`. This will produce the `.so`, `.sql`, and `.control` files needed to install your extension in PostgreSQL.
 
 1. In your terminal, navigate to your extension project directory.
-2. Run the following `pgx` command:
+2. Run the following `pgrx` command:
 
 ```bash
 
-   cargo pgx run pg13
+   cargo pgrx run pg13
 
 ```
 
