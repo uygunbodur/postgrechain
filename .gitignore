@@ -1,0 +1,54 @@
+.DS_Store
+.idea/
+/target
+*.iml
+**/*.rs.bk
+Cargo.lock
+
+
+/target
+**/*.rs.bk
+
+# Rustfmt backup files
+**/*.rs.bk
+
+# Cargo lock file for libraries
+/Cargo.lock
+
+# dotenv environment variables file
+.env
+.env.*
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+Desktop.ini
+
+# Ignore Linux specific files
+.*.swp
+.*.swo
+*~
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore other common editor temporary files
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*.swn
+*.swm
+*.swap
+
+# Ignore all log files
+*.log
+
+# Ignore npm packages if using wasm-pack
+/node_modules
+
