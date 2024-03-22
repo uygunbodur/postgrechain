@@ -1,3 +1,5 @@
+![PostgreChain Logo](/doc/postgrechain_logo_sm.png)
+
 # Custom Solana Program Accounts PostgreSQL Extension: postgreChain
 
 postgreChain is designed to integrate seamlessly with Solana blockchain data, enabling users to query program accounts directly from a PostgreSQL database. It leverages the power of Rust and the pgx framework to provide a high-performance, reliable, and easy-to-use solution for developers and analysts working with Solana blockchain data.
